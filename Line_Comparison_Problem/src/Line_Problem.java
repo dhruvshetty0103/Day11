@@ -21,13 +21,18 @@ public class Line_Problem {
 		length_of_line2=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
 		if(length_of_line1==length_of_line2)
 			System.out.println("Length of both lines are equal and it's length:"+length_of_line1);
-		else
+		else if(length_of_line1>length_of_line2)
 			{
-				System.out.println("Length of both lines are not equal");
+				System.out.println("Length of line 1 is greater than line 2");
 				System.out.println("Length of line 1:"+length_of_line1);
 				System.out.println("Length of line 2:"+length_of_line2);
 			}
-		
+		else
+			{
+				System.out.println("Length of line 2 is greater than line 1");
+				System.out.println("Length of line 2:"+length_of_line2);
+				System.out.println("Length of line 1:"+length_of_line1);
+			}
 	}
 
 }
